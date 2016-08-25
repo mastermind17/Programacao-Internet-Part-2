@@ -1,0 +1,19 @@
+<h1 class="text-center">Group "{{groupName}}"</h1>
+<div class="compact">
+  {{#each teams}}
+    <span>
+    <!-- call the handler to build the correct link -->
+    <button href="../leagues/{{leagueCode}}/teams/{{removeSpaces team}}" class="list-group-item group_team ">
+      <span class="btn-disable">
+      <i><b>{{team}}</b></i> ({{leagueCode}}) from <i>{{league}}</i>
+      {{#if @root.nextFixturesAmount}}
+        <span class="badge" id="next_amount_of_fixtures">Next {{@root.nextFixturesAmount}} fixtures</span>
+      {{/if}}
+      {{#if @root.lastFixturesAmount}}
+        <span class="badge" id="last_amount_of_fixtures">Last {{@root.lastFixturesAmount}} fixtures</span>
+      {{/if}}
+      </span>
+    </button>
+    </span>
+  {{/each}}
+</div>

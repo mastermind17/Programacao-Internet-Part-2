@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-lg-6 col-lg-offset-3 ">
+    <h2 class="text-center">List of Groups</h2>
+
+<div class="container control-group">
+    {{#each groups}}
+    <div class="btn-group btn-group-justified margin_sides col-xs-8" id="group_div">
+        <a class="btn btn-default" id="group" href="/groups/{{_id}}">{{name}}</a>
+                <!-- edit and remove button -->
+                <div class="input-group-btn">
+                    <span>
+                        <button class="btn btn-warning  btn-edit-team" onclick="window.location.href='{{_id}}/edit'">
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </button>
+                    </span>
+                    <span>
+                        <button class="btn btn-danger btn-remove-team">
+                            <span class="glyphicon glyphicon-remove"></span>
+                    </button>
+                    </span>
+                </div>
+                <!-- -->
+    </div>
+    {{/each}}
+</div>
+<a href="/groups/new" class="btn btn-primary btn-success margin_sides">
+    <span class="glyphicon glyphicon-pencil"></span> Create New
+</a>
+
