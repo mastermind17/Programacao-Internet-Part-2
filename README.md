@@ -8,7 +8,7 @@ Another difference from the first part is the usage of persistent storage. This 
 
 Having Express.js this time will let us separate responsabilities in a more robust way making very clear what the server application can handle, what expects from clients that try to communicate with it and what will serve as response.  
 
-Made once again with the contribution of [@HenriqueCalho](https://github.com/HenriqueCalho).
+Made once again with the contribution of Pedro Gabriel.
 
 ## How did we solved it
 
